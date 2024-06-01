@@ -189,7 +189,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn("antialiased overflow-hidden", inter.className)}>
-        <div className="h-full w-full grid grid-cols-12">
+        <div className="h-screen w-full grid grid-cols-12">
           <aside className="bg-primary/10 col col-span-0 hidden sm:col-span-3 lg:col-span-2 sm:flex flex-col items-start justify-start">
             <Link
               href="/"
@@ -253,7 +253,7 @@ export default function RootLayout({
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
-            <div className="flex flex-col h-[calc(100vh-3.9rem)] w-full container mx-auto py-10">
+            <div className="flex flex-col h-[calc(100vh-3.9rem)] w-full container mx-auto py-4">
               {children}
             </div>
           </div>
